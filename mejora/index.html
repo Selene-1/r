@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♡¿Quieres salir conmigo putito?♡</title>
+    <style>
+        .body{
+            background: turquoise;
+            text-align: center;
+        }
+        .body_tittle{
+            color: black;
+        }
+        .body_img{
+            width: 25%;
+            border-radius: 70%;
+        }
+    </style>
+</head>
+<body class="body"> 
+    <h1 class="body_tittle">♡¿Quieres salir conmigo putito?♡</h1>
+    <img src="https://1.bp.blogspot.com/-_djVURsXQEU/YNI5tSS11mI/AAAAAAAAtwM/2UHWBDBRrR8yhIzbwHzmCBnKvcviZgxKgCLcBGAsYHQ/s930/chikito.jpg" 
+    alt="perrito_panzon" class="body_img">
+    <button id="yes">Sí🥺</button>
+    <button id="no">No🥺</button>
+
+    <script>
+        const buttonSí = document.getElementById('yes');
+        const buttonNo = document.getElementById('no');
+
+        const somos = () => {
+            alert('Lo sabía, si quieres salir conmigo😉')
+            alert('Mi putitooooo😊')
+            location.href = 'https://youtu.be/pfZEFd_0w04?t=29'
+        }
+
+        const nosaltar = () => {
+            buttonNo.style.position = 'absolute';
+            buttonNo.style.top = (Math.random()*window.innerHeight) + 'px';
+            buttonNo.style.left = (Math.random()*window.innerWidth) + 'px';
+        }
+
+        buttonSí.addEventListener('click', somos);
+        buttonNo.addEventListener('mouseover', nosaltar);
+    </script>
+</body>
+</html>
